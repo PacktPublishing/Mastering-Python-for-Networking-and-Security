@@ -1,0 +1,4 @@
+six
+sphinx
+sphinx_rtd_theme
+termcolor==1.1.0
