@@ -1,14 +1,13 @@
 from concurrent.futures import ThreadPoolExecutor
 
-def task(n):
- print("Processing {}".format(n))
+def message(message):
+ print("Processing {}".format(message))
 
 def main():
  print("Starting ThreadPoolExecutor")
- with ThreadPoolExecutor(max_workers=3) as executor:
-   future = executor.submit(task, (2))
-   future = executor.submit(task, (3))
-   future = executor.submit(task, (4))
+ with ThreadPoolExecutor(max_workers=2) as executor:
+   future = executor.submit(message, ('message 1'))
+   future = executor.submit(message, ('message 2'))
  print("All tasks complete")
   
 if __name__ == '__main__':
