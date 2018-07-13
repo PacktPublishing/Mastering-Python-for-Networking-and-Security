@@ -6,6 +6,6 @@ def arpDisplay(pkt):
 		print x
 	if pkt[ARP].op == 2: #response
 		x = "Response: {} has address {}".format(pkt[ARP].hwsrc,pkt[ARP].psrc)
-	print x
+		print x
 
 sniff(prn=arpDisplay, filter="ARP", store=0, count=10)

@@ -14,5 +14,5 @@ def main():
 	#call scapy’s sniff method
 	sniff(filter="ip",iface="wlan0",prn=sniffPackets)
  
- if __name__ == '__main__':
+if __name__ == '__main__':
 	main()
