@@ -1,0 +1,4 @@
+usuario
+admin
+user
+anonymous
