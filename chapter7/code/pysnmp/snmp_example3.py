@@ -13,10 +13,10 @@ snmpTransportData = cmdgen.UdpTransportTarget((SNMP_HOST,SNMP_PORT))
 
 error,errorStatus,errorIndex,binds = snmpCmdGen.getCmd(cmdgen.CommunityData(SNMP_COMMUNITY),snmpTransportData,"1.3.6.1.2.1.1.1.0","1.3.6.1.2.1.1.3.0","1.3.6.1.2.1.2.1.0")
 if error:
-	print "Error"+error
+	print("Error"+error)
 else:
 	if errorStatus:
-		print '%s at %s' %(errorStatus.prettyPrint(),errorIndex and binds[int(errorIndex)-1] or '?')
+		print('%s at %s' %(errorStatus.prettyPrint(),errorIndex and binds[int(errorIndex)-1] or '?'))
 	else:
 		for name,val in binds:
 			print('%s = %s' % (name.prettyPrint(),val.prettyPrint()))

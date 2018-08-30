@@ -15,5 +15,5 @@ for community in fd.readlines():
 	if error:
 		print(str(error)+" For community: %s " %(community))
 	else:
-		print "Community Found '%s' ... exiting." %(community)
+		print("Community Found '%s' ... exiting." %(community))
 		break

@@ -11,18 +11,18 @@ command = 'df -h'
 def send_command(ssh_session, command):
 	ssh_session.sendline(command)
 	ssh_session.prompt()
-	print ssh_session.before
+	print(ssh_session.before)
 
 
 def connect(hostname, username, password):
 	try:
 		s = pxssh.pxssh()
 		if not s.login(hostname, username, password):
-			print "SSH session failed on login."
+			print("SSH session failed on login.")
 		return s
-    except pxssh.ExceptionPxssh as e:
-		print '[-] Error Connecting'
-		print str(e)
+	except pxssh.ExceptionPxssh as e:
+		print('[-] Error Connecting')
+		print(str(e))
 	 
 
 def main():

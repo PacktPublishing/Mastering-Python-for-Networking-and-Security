@@ -3,17 +3,17 @@ import ftplib
 def ftpListDirectory(ftp):
     try:
         dirList = ftp.nlst()
-        print dirList
+        print(dirList)
     except:
         dirList = []
-        print '[-] Could not list directory contents.'
-        print '[-] Skipping To Next Target.'
+        print('[-] Could not list directory contents.')
+        print('[-] Skipping To Next Target.')
         return
     retList = []
     for fileName in dirList:
         fn = fileName.lower()
         if '.php' in fn or '.htm' in fn or '.asp' in fn:
-            print '[+] Found default page: ' + fileName
+            print('[+] Found default page: ' + fileName)
             retList.append(fileName)
             
     return retList
@@ -25,11 +25,11 @@ def anonymousLogin(hostname):
         print(ftp.getwelcome())
         ftp.set_pasv(1)
         print(ftp.dir())        
-        print '\n[*] ' + str(hostname) +' FTP Anonymous Logon Succeeded.'
+        print('\n[*] ' + str(hostname) +' FTP Anonymous Logon Succeeded.')
         return ftp
-    except Exception, e:
-        print str(e)
-        print '\n[-] ' + str(hostname) +' FTP Anonymous Logon Failed.'
+    except Exception as e:
+        print(str(e))
+        print('\n[-] ' + str(hostname) +' FTP Anonymous Logon Failed.')
         return False
 
 host = 'ftp.be.debian.org'
