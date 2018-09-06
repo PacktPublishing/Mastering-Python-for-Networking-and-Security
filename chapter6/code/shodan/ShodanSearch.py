@@ -95,7 +95,7 @@ def main():
             time.sleep(3)
             host = shodan.get_host_info(sys.argv[2])
             if len(host) != 0:
-				print host
+				#print host
 				# printing the information about the host
 				if 'ip' in host.keys():
 					print 'IP: %s' % host.get('ip_str')
