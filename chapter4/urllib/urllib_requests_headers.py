@@ -5,5 +5,5 @@ request = urllib2.Request(url,headers=headers)
 response = urllib2.urlopen(request)
 # Here we check response headers
 if response.code == 200: 
-	print response.headers
+	print(response.headers)
 

@@ -13,7 +13,7 @@ for user in users:
 		encoded = base64.encodestring(user+':'+passwd)
 		response = requests.get(protectedResource, auth=(user,passwd))
 		if response.status_code != 401:
-			print 'User Found!'
-			print 'User: %s, Pass: %s' %(user,passwd)
+			print('User Found!')
+			print('User: %s, Pass: %s' %(user,passwd))
 			foundPass=True
 			break

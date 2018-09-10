@@ -5,4 +5,4 @@ response.getcode()
 response.headers.keys()
 response.headers.values()
 for header,value in response.headers.items():
-	print header + ":" + value
+	print(header + ":" + value)

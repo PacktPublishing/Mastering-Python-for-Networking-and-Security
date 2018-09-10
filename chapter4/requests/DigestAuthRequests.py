@@ -14,7 +14,7 @@ for user in users:
 		if res.status_code == 401:
 			resDigest = requests.get(protectedResource, auth=HTTPDigestAuth(user, passwd))
 			if resDigest.status_code == 200:
-				print 'User Found...'
-				print 'User: '+user+' Pass: '+passwd				
+				print('User Found...')
+				print('User: '+user+' Pass: '+passwd)				
 				foundPass = True
 

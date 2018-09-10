@@ -17,4 +17,4 @@ pattern = re.compile("[-a-zA-Z0-9._]+@[-a-zA-Z0-9_]+.[a-zA-Z0-9_.]+")
 #get mails from regular expression
 mails = re.findall(pattern,content)
 
-print mails
+print(mails)
