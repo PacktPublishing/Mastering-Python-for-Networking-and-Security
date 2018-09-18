@@ -8,9 +8,13 @@ iv = os.urandom(16)
 cipher = Cipher(algorithms.AES(key), modes.CBC(iv), backend=backend)
 
 encryptor = cipher.encryptor()
+print(encryptor)
 
-ct = encryptor.update("a secret message") + encryptor.finalize()
+message_encrypted = encryptor.update("a secret message")
+
+print("\n\nCipher text: "+message_encrypted)
+ct =  message_encrypted + encryptor.finalize()
 
 decryptor = cipher.decryptor()
 
-print(decryptor.update(ct))
+print("\n\nPlain text: "+decryptor.update(ct))
