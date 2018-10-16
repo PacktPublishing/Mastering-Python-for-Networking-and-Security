@@ -63,10 +63,6 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 
 * Mastering Python Networking - Second Edition [[Packt]](https://www.packtpub.com/networking-and-servers/mastering-python-networking-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781789135992 ) [[Amazon]](https://www.amazon.com/dp/1789135990)
 
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
-
-*  [[Packt]]() [[Amazon]](https://www.amazon.com/dp/)
-
 ## Get to Know the Author
 **José Manuel Ortega**
 José Manuel Ortega is a Software Engineer and he focuses on new technologies, open source, security and testing. His career target from the beginning has been to specialize in Python and security testing projects. In recent years he has developed interest in security development, especially in pen-testing with python. Currently he is working as a security tester engineer and his functions in the project are analysis and testing the security of applications both web and mobile environments.
