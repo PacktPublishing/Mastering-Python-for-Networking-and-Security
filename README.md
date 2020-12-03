@@ -1,6 +1,6 @@
 # Mastering Python for Networking and Security
 
-<a href="https://www.packtpub.com/networking-and-servers/mastering-python-networking-and-security?utm_source=github&utm_medium=repository&utm_campaign=9781788992510 "><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/9781788992510.png" alt="Mastering Python for Networking and Security" height="256px" align="right"></a>
+<a href="https://www.packtpub.com/networking-and-servers/mastering-python-networking-and-security?utm_source=github&utm_medium=repository&utm_campaign=9781788992510 "><img src="https://static.packt-cdn.com/products/9781788992510/cover/smaller" alt="Mastering Python for Networking and Security" height="256px" align="right"></a>
 
 This is the code repository for [Mastering Python for Networking and Security](https://www.packtpub.com/networking-and-servers/mastering-python-networking-and-security?utm_source=github&utm_medium=repository&utm_campaign=9781788992510 ), published by Packt.
 
