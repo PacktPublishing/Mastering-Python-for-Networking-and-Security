@@ -1,3 +1,15 @@
+
+### Get this product for $5
+
+<i>Packt is having its biggest sale of the year. Get this eBook or any other book, video, or course that you like just for $5 each</i>
+
+
+<b><p align='center'>[Buy now](https://packt.link/9781788992510)</p></b>
+
+
+<b><p align='center'>[Buy similar titles for just $5](https://subscription.packtpub.com/search)</p></b>
+
+
 # Mastering Python for Networking and Security
 
 <a href="https://www.packtpub.com/networking-and-servers/mastering-python-networking-and-security?utm_source=github&utm_medium=repository&utm_campaign=9781788992510 "><img src="https://static.packt-cdn.com/products/9781788992510/cover/smaller" alt="Mastering Python for Networking and Security" height="256px" align="right"></a>
